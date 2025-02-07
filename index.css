@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+nav{
+    z-index: 100 !important;
+}
+.hero-section {
+    margin-top: 76px !important;
+    background: linear-gradient(rgba(3,175,240, 0.5), rgba(18, 0, 64, 0.8)), url('https://aladmosolutionshub.weebly.com/uploads/1/5/0/4/150461301/pexels-kampus-5940841_orig.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 89vh;
+}
+#home h5{
+    width: 700px;
+}
+.nav-link.active {
+    border-bottom: 2px solid #14A8E7; 
+}
+.bat{
+    height: 50px;
+    background-color: #14A8E7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px 12px 25px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+.search-bar {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.section {
+    padding: 50px 0;
+}
+.section-dark {
+    background-color: #14A8E7;
+    color: white;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 25px 0 20px 0;
+}
+.day{
+    width: 100%;
+    padding: 15px !important;
+    border: 8px solid #14A8E7;
+    border-radius: 3px;
+    position: relative;
+    height: 377px;
+}
+.day img{
+    border-radius: 3px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.dat{
+    border: 8px solid white;
+}
+.exp h4{
+    color: white !important;
+}
+.bam{
+    background-color: white;
+    color: #14A8E7;
+}
+.line{
+    width: 35px;
+    height: 2px;
+    background-color: #14A8E7;
+    margin-top: 14px;
+}
+.doo h4{
+    color: #14A8E7;
+}
+.doo h3{
+    font-weight: 600;
+}
+.doo h6{
+    color: gray;
+    font-weight: 400;
+}
+.doo h5{
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.por{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #14A8E7;
+    font-size: 20px;
+}
+.omo {
+    background: linear-gradient(rgba(3, 3, 3, 0.9), rgba(3, 3, 3, 1)), url('https://media.premiumtimesng.com/wp-content/files/2020/04/LAUTECH.jpg');
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+.mum h5{
+    color: #14A8E7;
+    font-size: 20px;
+}
+.mum h2{
+    font-weight: 600;
+    color: black;
+}
+.mum p{
+    max-width: 440px;
+    color: gray;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.accordion-item {
+    margin-bottom: 10px;
+}
+.question {
+    background-color: #14A8E7;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+.question:hover {
+    background-color: #0c4258;
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    width: 100%;
+    padding: 0 15px 0px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    font-size: 16px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.answer.show {
+    max-height: 150px;
+    opacity: 1;
+    padding: 15px;
+}
+.container .navbar-brand{
+    width: 60px;
+}
+.clear{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    border-bottom: 4px solid #14A8E7;
+}
+.edd{
+    background-color: #14A8E7 !important;
+    color: white;
+}
+.clear svg, .clear i{
+    width: 40px;
+    color: #14A8E7;
+    font-size: 23px;
+}
+.clear a{
+    text-decoration: none;
+    color: black;
+}
+.cat{
+    animation: moveLeftRight 3s ease-in-out infinite;
+}
+@keyframes moveLeftRight {
+    0% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+}
+.car{
+    animation: move 3s ease-in-out infinite;
+}
+@keyframes move {
+    0% {
+      transform: rotate(1deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+}
+.dot {
+    position: relative;
+}
+.tam{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.tam p{
+    color: gray;
+}
+.tam h3{
+    padding-top: 60px ;
+}
+.koo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -70px;
+    right: 70px;
+}
+.lag{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #14A8E7;
+    z-index: 0; 
+    border-radius: 5px;
+}  
+.bor{
+    padding: 80px 0px 0px 90px;
+    gap: 100px !important;
+} 
+.low input,.low textarea,.das input{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+.low textarea{
+    height: 100px;
+}
+.con{
+    width: 100px;
+}
+.das h5{
+    color: #14A8E7;
+}
+.kel{
+    padding-top: 80px;
+}
+.kel i{
+    color: #14A8E7;
+}
+@media (max-width:977px) {
+    .doo{
+        margin-top: 70px !important;
+    }
+}
+@media (max-width:762px) {
+    .day img{ 
+        margin-left: 0px;
+        width: 90%;
+    }
+    .kel{
+        padding-top: 0px;
+    }
+    .bor{
+        padding: 80px 0px 0px 10px;
+    }
+    .koo img{
+        right: 100px;
+    }
+    .day{
+        height: 227px;
+    }
+    .container{
+        padding: 15px !important;
+    }
+    .cet {
+        padding: 5px !important;
+    }
+    .doo{
+        margin-top: 20px !important;
+    }
+    .deb{
+        width: 100% !important;
+    }
+    .doo h4{
+        font-size: 18px;
+    }
+    #home h5{
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    .mum h2{
+        width: 100% !important;
+    }
+    nav{
+        padding: 0px !important;
+    }
+    .container .navbar-brand{
+        width: 50px;
+    }
+    .dac,.yoo{
+        margin-top: 30px;
+    }
+    .answer{
+        padding:  15px !important;
+    }
+    #review{
+        text-align: center;
+    }
+}
