@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AladmoSolutionHub</title>
+    <title>AladmoSolutionsHub</title>
+    <meta name="description" content="Aladmo solutions hub is an intellectual Solutions Center dedicated to partnering with you to achieve excellence.">
+    <meta name="keywords" content="thesis, journal, project writing, software issues">
+
+    <meta name="author" content="Aladmo Solutions Hub">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
 </head>
+<style>
+    @media (max-width:764px) {
+        .vid{
+            margin-top: 10px;
+        }
+    }
+</style>
 <body>
     <div class="overflow-x-hidden">
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-1 position-fixed w-100">
@@ -45,7 +57,7 @@
             </div>
         </div>
 
-        <div class="container section mt-5 "  id="about">
+        <div class="container secthion -mt5 "  id="about">
             <div class="row gap-4" >
                 <div class="col col-lg-6 col-12" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="day">
@@ -56,7 +68,7 @@
                     <div class="doo">
                         <div class="d-flex gap-2">
                             <div class="line"></div>
-                            <h4>Welcome to Aladmo Solution Hub!</h4>
+                            <h4>Welcome to Aladmo Solutions Hub!</h4>
                         </div>
                         <h3>Advancing research and innovation through technology and collaboration solutions.</h3>
                         <h6 class="pt-3">At Aladmo Solution Hub, we are dedicated to pioneering discoveries and advancing innovation across various fields. Through research excellence, state-of-the-art technology, and strategic collaborations, we shape the future and turn ideas into reality by:</h6>
@@ -231,8 +243,7 @@
                             <div class="answer">Getting started is easy! Simply reach out to us through our contact form or email, and one of our experts will get in touch with you to discuss your needs and how we can assist with your research or innovation projects.</div>
                         </div>
                     </div>
-                </div>
-                </div>
+                </div>  
             </div>
         </div>
 
@@ -247,30 +258,30 @@
                 </div>
                 <div class="col col-12 col-md-6 col-lg-6">
                     <div>
-                        <form action="" class="low">
+                        <form action="" method="post" class="low">
                             <div class="row">
                                 <div class="col col-12 col-md-6 col-lg-6">
                                     <div>
-                                        <input type="text" placeholder="First Name" required>
+                                        <input type="text" name="firstName" placeholder="First Name" required>
                                     </div>
                                 </div>
                                 <div class="col col-12 col-md-6 col-lg-6">
                                     <div>
-                                        <input type="text" placeholder="Last Name" required>
+                                        <input type="text" name="lastName" placeholder="Last Name" required>
                                     </div>
                                 </div>
                                 <div class="col col-12 col-md-12 col-lg-12  pt-4">
                                     <div>
-                                        <input type="email" placeholder="Email" required>
+                                        <input type="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col col-12 col-md-12 col-lg-12  pt-4">
                                     <div>
-                                        <textarea name="" id="" placeholder="Tell us about your project"></textarea>
+                                        <textarea name="project" id="" placeholder="Tell us about your project"></textarea>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center justify-content-center pt-4">
-                                    <button class="bat">Get in touch</button>
+                                    <button class="bat" name="submit">Get in touch</button>
                                 </div>
                             </div>
                         </form>

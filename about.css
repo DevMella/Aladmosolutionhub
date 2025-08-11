@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.ala{
+    background:  linear-gradient(rgba(3,175,240, 0.2), rgba(18, 0, 64, 0.8)), url('https://aladmosolutionshub.weebly.com/uploads/1/5/0/4/150461301/pexels-kampus-5940841_orig.jpg');
+    width: 100%;
+}
+.ala h1{
+    font-family: "Rubik Scribble", serif;
+    color: white;
+    font-size: 80px;
+    padding-top: 90px;
+}
+.hom{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.koos img{
+    height: 320px;
+    object-fit: cover;
+    position: absolute;
+}
+.und{
+    margin-top: 90px !important;
+}
+.yee img{
+    height: 340px;
+    object-fit: cover;
+}
+@media (max-width:763px) {
+    .koos img{
+        width: 93% !important;
+        margin-top: 30px;
+    }
+    .gee{
+        margin-top: 260px !important;
+    }
+}

@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/93483deb2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        .papa{
+            display: flex;
+            align-items:center;
+            justify-content:space-between;
+            width: 400px;
+        }
+       
+        @media (max-width:764px) {
+           .papa{
+            width: 100%;
+            flex-direction:column;
+            align-items:start;
+           } 
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="body">
+            <div class="icons bab d-flex justify-content-between  fixed-bottom w-100 d-lg-none d-md-none d-block gap-2">
+                <div>
+                    <a href="dashboard.html" class="d-flex flex-column align-items-center">
+                        <i class="bi bi-house-add-fill text-center fs-4"></i>
+                        <p>Home</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="client.html" class="d-flex flex-column align-items-center">
+                        <i class="bi bi-calendar-check"></i>
+                        <p>Client's</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="d-flex flex-column align-items-center">
+                        <i class="bi bi-book-fill"></i>
+                        <p>Payment</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="d-flex flex-column align-items-center">
+                        <i class="bi bi-person fs-4"></i>
+                        <p>Me</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="" class="d-flex flex-column align-items-center">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="logo" style="width: 130px;">
+                    <img src="https://aladmosolutionshub.com/images/Aladmo_logo-removebg-preview.png" width="100%" alt="">
+                </div>
+                <div class="icons mt-4">
+                    <a href="dashboard.html">
+                        <div class="icon d-flex gap-2 mb-3" id="dashboard">
+                            <i class="bi bi-house-add-fill"></i>
+                            <p>Dashboard</p>
+                        </div>
+                    </a>
+                    <a href="client.html">
+                        <div class="icon d-flex gap-2 mb-3" id="schedule">
+                            <i class="bi bi-calendar-check"></i>
+                            <p>Client's</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon d-flex gap-2 mb-3" id="courses">
+                            <i class="bi bi-book-fill"></i>
+                            <p>Report History</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon d-flex gap-2 mb-3" id="courses">
+                            <i class="bi bi-book-fill"></i>
+                            <p>Payment History</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon d-flex gap-2 mb-1" id="profile">
+                            <i class="bi bi-person-add"></i>
+                            <p>Profile</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="icon d-flex gap-2 mb-3" id="profile">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="top">
+                    <h6>Hi, <span style="font-weight: bold;">Mella</span> 👏</h6>
+                    <div class="d-flex gap-3">
+                        <div class="hol">
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="box"><i class="bi bi-bell-fill"></i></div>
+                    </div>
+                </div>
+                <div class="mine mt-4">
+                    <div class="row g-5">
+                        <div class="col col-lg-8">
+                            <div class="order">
+                                <div class="">
+                                    <h5 class="pt-1">Client Details</h5>
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <h5 id="tab-website" style="text-decoration: underline; cursor: pointer;">Website</h5>
+                                        <h5 id="tab-report" style="cursor: pointer;">Report Writing</h5>
+                                    </div>
+                                    <div id="website-clients" class="client-list">
+                                        <div class="juus mt-3" style="  padding: 14px 10px 10px 10px !important;">
+                                            <div class="d-flex gap-3">
+                                                <div style="width: 130px;">
+                                                    <img src="https://i.pinimg.com/736x/7e/83/0e/7e830e9c49dee63d546ba2b376523d30.jpg" width="100%" style="width: 100%;border-radius: 50%;" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>CEO, Jemray Solar</h6>
+                                                    <p>Jemray Solar we design and deliver trusted solar solutions that power homes, businesses, and entire communities. Backed by deep experience, certified quality, and a mission to make clean energy accessible and affordable for all</p>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Fee Charged</h6>
+                                                        <h6>N250,000</h6>
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Location</h6>
+                                                        <h6>Abuja</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="juus mt-3" style="  padding: 14px 10px 10px 10px !important;">
+                                            <div class="d-flex gap-3">
+                                                <div style="width: 130px;">
+                                                    <img src="https://i.pinimg.com/736x/7e/83/0e/7e830e9c49dee63d546ba2b376523d30.jpg" width="100%" style="width: 100%;border-radius: 50%;" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>CEO, Best Ekus Solar</h6>
+                                                    <p>Best Ekus Solar we design and deliver trusted solar solutions that power homes, businesses, and entire communities. Backed by deep experience, certified quality, and a mission to make clean energy accessible and affordable for all</p>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Fee Charged</h6>
+                                                        <h6>N250,000</h6>
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Location</h6>
+                                                        <h6>Abuja</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="report-clients" class="client-list" style="display: none;">
+                                        <div class="juus mt-3" style="  padding: 14px 10px 10px 10px !important;">
+                                            <div class="d-flex gap-3">
+                                                <div style="width: 130px;">
+                                                    <img src="https://i.pinimg.com/736x/7e/83/0e/7e830e9c49dee63d546ba2b376523d30.jpg" width="100%" style="width: 100%;border-radius: 50%;" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>Dalali Anderson</h6>
+                                                    <p>A comprehensive and in-depth analysis of the oil and gas sector, exploring industry trends, market dynamics, regulatory frameworks, and emerging technologies. This research is designed for academic purposes, providing valuable insights and data-driven findings that can support scholarly work, case studies, and professional projects. It covers upstream, midstream, and downstream activities, as well as environmental, economic, and geopolitical considerations affecting the industry. </p>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Fee Charged</h6>
+                                                        <h6>N250,000</h6>
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Location</h6>
+                                                        <h6>Abuja</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="juus mt-3" style="  padding: 14px 10px 10px 10px !important;">
+                                            <div class="d-flex gap-3">
+                                                <div style="width: 130px;">
+                                                    <img src="https://i.pinimg.com/736x/7e/83/0e/7e830e9c49dee63d546ba2b376523d30.jpg" width="100%" style="width: 100%;border-radius: 50%;" alt="">
+                                                </div>
+                                                <div>
+                                                    <h6>Iraqi Milan</h6>
+                                                    <p>A comprehensive and in-depth analysis of the oil and gas sector, exploring industry trends, market dynamics, regulatory frameworks, and emerging technologies. This research is designed for academic purposes, providing valuable insights and data-driven findings that can support scholarly work, case studies, and professional projects. It covers upstream, midstream, and downstream activities, as well as environmental, economic, and geopolitical considerations affecting the industry. </p>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Revenue Generated</h6>
+                                                        <h6>N250,000</h6>
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <h6>Location</h6>
+                                                        <h6>Abuja</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="calendar mb-4">
+                                <div class="header">
+                                    <button id="prev-month">&lt;</button>
+                                    <span id="month-year" style="font-weight: 600; font-size: 20px;"></span>
+                                    <button id="next-month">&gt;</button>
+                                </div>
+                                <div class="weekdays">
+                                    <div>Sun</div>
+                                    <div>Mon</div>
+                                    <div>Tue</div>
+                                    <div>Wed</div>
+                                    <div>Thu</div>
+                                    <div>Fri</div>
+                                    <div>Sat</div>
+                                </div>
+                                <div id="days" class="days"></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 style="font-weight:600;">Schedule</h5> 
+                                <div class="d-flex align-items-center" id="seeAllBtn">
+                                    <h6 class="mt-1">See all</h6>
+                                    <i class="bi bi-arrow-right-short" style="color: #54baac;font-size: 29px; font-weight: 600;"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="juu mt-3 d-flex justify-content-between align-items-center">
+                                    <h4>07</h4>
+                                    <div class="line"></div>
+                                    <div>
+                                        <h6>Dalal Meeting</h6>
+                                        <p style="font-size: 14px;">2hours</p>
+                                    </div>
+                                    <p style="font-size: 14px;">11:00 - 1PM</p>
+                                </div>
+                                <div class="juu mt-3 d-flex justify-content-between align-items-center">
+                                    <h4>07</h4>
+                                    <div class="line"></div>
+                                    <div>
+                                        <h6>Dalal Meeting</h6>
+                                        <p style="font-size: 14px;">2hours</p>
+                                    </div>
+                                    <p style="font-size: 14px;">11:00 - 1PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const currentPageId = "schedule";
+        document.getElementById(currentPageId).classList.add("active");
+        const daysContainer = document.getElementById('days');
+        const monthYearDisplay = document.getElementById('month-year');
+        const prevMonthBtn = document.getElementById('prev-month');
+        const nextMonthBtn = document.getElementById('next-month');
+         const websiteTab = document.getElementById("tab-website");
+    const reportTab = document.getElementById("tab-report");
+    const websiteClients = document.getElementById("website-clients");
+    const reportClients = document.getElementById("report-clients");
+
+    websiteTab.addEventListener("click", () => {
+        websiteClients.style.display = "block";
+        reportClients.style.display = "none";
+        websiteTab.style.textDecoration = "underline";
+        reportTab.style.textDecoration = "none";
+    });
+
+    reportTab.addEventListener("click", () => {
+        websiteClients.style.display = "none";
+        reportClients.style.display = "block";
+        reportTab.style.textDecoration = "underline";
+        websiteTab.style.textDecoration = "none";
+    });
+        let currentDate = new Date();
+
+        function renderCalendar(date) {
+            daysContainer.innerHTML = '';
+            const month = date.getMonth();
+            const year = date.getFullYear();
+
+            monthYearDisplay.textContent = date.toLocaleString('default', { month: 'long' }) + ' ' + year;
+
+            const firstDayOfMonth = new Date(year, month, 1).getDay();
+            const lastDateOfMonth = new Date(year, month + 1, 0).getDate();
+            const lastDateOfLastMonth = new Date(year, month, 0).getDate();
+
+            for (let i = firstDayOfMonth; i > 0; i--) {
+                const day = document.createElement('div');
+                day.classList.add('prev-month-day');
+                day.textContent = lastDateOfLastMonth - i + 1;
+                daysContainer.appendChild(day);
+            }
+
+            for (let i = 1; i <= lastDateOfMonth; i++) {
+                const day = document.createElement('div');
+                day.textContent = i;
+                if (
+                    i === currentDate.getDate() &&
+                    month === currentDate.getMonth() &&
+                    year === currentDate.getFullYear()
+                ) {
+                    day.classList.add('today');
+                }
+                daysContainer.appendChild(day);
+            }
+        }
+
+        prevMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar(currentDate);
+        });
+
+        nextMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar(currentDate);
+        });
+
+        renderCalendar(currentDate);
+
+        document.getElementById('seeAllBtn').addEventListener('click', function() {
+            let hiddenBoxes = document.querySelectorAll('.hidden');
+            hiddenBoxes.forEach(function(box) {
+                box.classList.remove('hidden');
+            });
+            this.style.display = 'none'; 
+        });
+
+        document.getElementById('allBtn').addEventListener('click', function() {
+            document.getElementById('malecontainer').style.display = 'block';
+            document.getElementById('matecontainer').style.display = 'none';
+        });
+
+        document.getElementById('completedBtn').addEventListener('click', function() {
+            document.getElementById('matecontainer').style.display = 'block';
+            document.getElementById('malecontainer').style.display = 'none';
+        });
+
+    </script>
+</body>
+</html>

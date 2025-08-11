@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AladmoSolutionsHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<style>
+    .ala{
+        background:  linear-gradient(rgba(3,175,240, 0.2), rgba(18, 0, 64, 0.8)), url('https://aladmosolutionshub.weebly.com/uploads/1/5/0/4/150461301/pexels-kampus-5940841_orig.jpg');
+        width: 100%;
+    }
+    .ala h1{
+        font-family: "Rubik Scribble", serif;
+        color: white;
+        font-size: 80px;
+        padding-top: 90px;
+    }
+    .hom{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .koos img{
+        height: 320px;
+        object-fit: cover;
+        position: absolute;
+    }
+    .und{
+        margin-top: 90px !important;
+    }
+    .yee img{
+        height: 340px;
+        object-fit: cover;
+    }
+    .amm{
+        position:fixed !important;
+        right:20px;
+        bottom: 0px;
+        z-index:100;
+    }
+    .amm a{
+        color:#5BF072;
+        margin-top:50px;
+    }
+    .amm a svg{
+        width:70px;
+    }
+    @media (max-width:764px) {
+        .poo{
+            margin-top: 30px;
+        }
+        .vid{
+            margin-top: 20px;
+        }
+        .amm{
+            position:fixed !important;
+            right:5px;
+            bottom: 0px;
+        }
+        .amm a svg{
+            width:60px;
+        }
+        .navbar-brand h5{
+            font-size:15px;
+        }
+        .navbar-brand {
+            align-items:start !important;
+        }
+        .navbar-brand img{
+            margin-left:40px;
+            width:36px;
+        }
+        .navbar{
+            padding:0px 0px 0px 0px !important;
+        }
+        .koos img{
+            width: 93% !important;
+            margin-top: 30px;
+        }
+        .gee{
+            margin-top: 260px !important;
+        }
+    }
+</style>
+<body>
+    <div class="overflow-x-hidden">
+        <div class="amm position-fixed">
+            <a href="https://wa.me/2349023051314?text=Hi, my name is..." >
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#5BF072" d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7c-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9c-36.8-15.9-61.8-51.5-66.9-58.7c-.4-.6-.7-.9-.8-1.1c-2-2.6-16.2-21.5-16.2-41c0-18.4 9-27.9 13.2-32.3c.3-.3 .5-.5 .7-.8c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6 .1c.3 0 .5 0 .8 0c2.3 0 5.2 0 8.1 6.8c1.2 2.9 3 7.3 4.9 11.8c3.3 8 6.7 16.3 7.3 17.6c1 2 1.7 4.3 .3 6.9c-3.4 6.8-6.9 10.4-9.3 13c-3.1 3.2-4.5 4.7-2.3 8.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1c2.8 1.4 4.7 2.3 5.5 3.6c.9 1.9 .9 9.9-2.4 19.1c-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM148.1 393.9L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5c-26.6 0-52.7-6.7-75.8-19.3z"/></svg>           
+            </a>           
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100">
+            <div class="container">
+                <a class="navbar-brand d-flex flex-column align-items-center justify-content-center" >
+                    <img src="./images/Aladmo_logo-removebg-preview.png" width="100%" alt="">
+                    <h5 style="color:#14A8E7;font-size:15px">Aladmo solutions hub</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-4 d-flex align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.php" id="home-link">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" id="about-link">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=services#services" id="services-link">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=review#review" id="contact-link">Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=faq#faq" id="faq-link">FAQS</a></li>
+                        <li class="nav-item"><a class="bat " href="contact.php">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="ala">
+            <div class="hom d-flex align-items justify-content-center">
+                <h1>About us</h1>
+            </div>
+        </div>            
+    
+        <div class="container section mt-5 " >
+            <div class="row gap-4" >
+                <div class="col col-lg-6 col-12" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="day">
+                        <img src="https://aladmosolutionshub.weebly.com/uploads/1/5/0/4/150461301/pexels-fauxels-3184339_orig.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-12" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="doo">
+                        <div class="d-flex gap-2">
+                            <div class="line"></div>
+                            <h4>Welcome to Aladmo Solution Hub!</h4>
+                        </div>
+                        <h3>Advancing research and innovation through technology and collaboration solutions.</h3>
+                        <h6 class="pt-3">At Aladmo Solution Hub, we are dedicated to pioneering discoveries and advancing innovation across various fields. Through research excellence, state-of-the-art technology, and strategic collaborations, we shape the future and turn ideas into reality by:</h6>
+                        <div class="pt-3">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="por">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <h5 class="pt-2">Pushing Research Forward for a Brighter Future</h5>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center pt-3">
+                                <div class="por">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <h5 class="pt-2">Exploring New Possibilities, Creating Change</h5>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center pt-3">
+                                <div class="por">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <h5 class="pt-2">Fueling Innovation Through Research</h5>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center pt-3">
+                                <div class="por">
+                                    <i class="bi bi-check"></i>
+                                </div>
+                                <h5 class="pt-2">Turning Concepts into Reality</h5>
+                            </div>
+                            <a href="">
+                                <button class="bat mt-4">LEARN MORE</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="container section mb-5">
+            <div class="row">
+                <div class="col col-12 col-md-6 col-lg-6">
+                    <div class="doo">
+                        <div class="d-flex gap-2">
+                            <div class="line"></div>
+                            <h4>Our Vision</h4>
+                        </div>
+                        <h6 class="pt-3">We envision becoming a global leader in providing intellectual solutions that drive innovation, foster growth, and contribute to the advancement of society across various sectors.
+                        </h6>
+                        <a href="index.php"><button class="bat mt-4">Learn More</button></a>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-12" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="lag cat"></div>
+                    <div class="koos">
+                        <img src="https://i.pinimg.com/736x/89/9b/a5/899ba5bb245bd1d69b2cc65d565f7b8f.jpg" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section und">
+            <div class="row">
+                <div class="col col-12 col-md-6 col-lg-6 d-lg-block d-none">
+                    <div class="yee">
+                        <img src="https://i.pinimg.com/736x/43/29/dd/4329ddae4a43cbdc4709791d39daedc1.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-6 gee">
+                    <div class="doo">
+                        <div class="d-flex gap-2">
+                            <div class="line"></div>
+                            <h4>Our Mission</h4>
+                        </div>
+                        <h6 class="pt-3">At Aladmo Solutions Hub, our mission is to drive innovation and excellence by providing intellectual solutions that empower individuals and organizations. We are dedicated to fostering growth, creating impactful advancements across various sectors, and contributing meaningfully to societal progress through our commitment to quality, integrity, and client success throughout the world.
+                        </h6>
+                        <a href="index.php"><button class="bat mt-4">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section mt-5 " >
+            <div class="row gap-4" >
+                <div class="col col-lg-6 col-12" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="day">
+                        <img src="https://aladmosolutionshub.weebly.com/uploads/1/5/0/4/150461301/published/pexels-rethaferguson-3810788.jpg?1723668631" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-12" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="doo">
+                        <div class="d-flex gap-2">
+                            <div class="line"></div>
+                            <h4>​We are here for you</h4>
+                        </div>
+                        <h6 class="pt-3">Our global network and expertise set us apart. We are not confined by geographical borders, and our clientele spans across countries such as the US, UK, Australia, New Zealand, South Africa, Germany, France, Saudi Arabia, Qatar, Iraq, and many other nations in the world. At Aladmo Solutions Hub, we are dedicated to shaping the future landscape of academia, innovation, and business, one project at a time.</h6>
+                        <a href="index.php"><button class="bat mt-4">Learn More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="footer">
+            <div class="container section">
+                <div class="row">
+                    <div class="col col-12 col-md-4 col-lg-4">
+                        <div>
+                            <div class="con">
+                                <img src="./images/Aladmo_logo-removebg-preview.png" width="100%" alt=""> 
+                            </div>
+                            <div class="das pt-4">
+                                <h5>About Us</h5>
+                                <p>We help advance your research and innovations, providing the support needed to turn groundbreaking ideas into impactful solutions for the future</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4 col-lg-4 kel">
+                        <div class="das pt-5">
+                            <h5>Contact Us</h5>
+                            <div class="d-flex gap-2">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p>+234 90230 51314</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <i class="bi bi-envelope-arrow-up-fill"></i>
+                                <p>Contact@aladmosolutionshub.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4 col-lg-4 kel">
+                        <div class="das pt-5">
+                            <h5>Subscribe to our Newsletter</h5>
+                            <div class="pt-3">
+                                <form action="">
+                                    <input type="email" placeholder="Enter your email">
+                                    <button class="bat mt-4">Subscribe Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center; padding-top: 50px;">&copy; 2025 Aladmo Standard International Limited | All rights reserved</p>
+            </div>
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const questions = document.querySelectorAll(".question");
+
+            questions.forEach((question) => {
+                question.addEventListener("click", function() {
+                    const currentlyOpen = document.querySelector(".answer.show");
+                    
+                    if (currentlyOpen && currentlyOpen !== this.nextElementSibling) {
+                        currentlyOpen.classList.remove("show");
+                    }
+
+                    const answer = this.nextElementSibling;
+                    answer.classList.toggle("show");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
